@@ -1,0 +1,132 @@
+html{
+    box-sizing:border-box
+}
+*,*:before,*:after{box-sizing:inherit}
+
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+body{margin:0}
+
+body {
+    background:#000;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:300;
+
+}
+
+.top {
+    top:0;
+    width:100%;
+    z-index:1;
+    position:absolute;
+    //position:fixed;
+}
+
+.bar {
+    padding: 8px 16px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    white-space: normal;
+
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+}
+
+.bar-item {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.bar .menu {
+    float: right
+}
+@media (max-width:600px) {
+    .bar .menu {
+        display:none!important;
+    }
+}
+
+.content {
+    margin:auto;
+}
+
+
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    vertical-align: middle;
+    border-style:none;
+}
+.display-container {
+    margin:auto;
+    position:relative
+}
+
+.display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+
+.container {
+    padding: 150px 20px; //todo:change to responsive units!
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    font-size:18px;
+    color:#ccc;
+
+}
+
+.container > p {
+    padding-top: 63px; //todo: change to responsive units
+    padding-bottom: 135px;
+    max-width:860px;
+    margin: 0 auto;
+}
+
+#about {
+    background-image: url('layout/bg_images/bg_2.jpg');
+}
+#mission {
+    background-image: url('layout/bg_images/bg_3.jpg');
+}
+#team {
+    background: #000;
+}
+#contact {
+    background-image: url('layout/bg_images/bg_4.jpg');
+}
+
+footer {
+    background: #1a1a1a;
+    text-align: center;
+    width:100%;
+    padding:20px;
+}
