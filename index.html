@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>COME-MILLION!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet">
@@ -10,7 +10,10 @@
 <!-- Navbar (sit on top) -->
 <div class="top">
   <div class="bar">
-    <a href="#home" class="logo bar-item"><b>COME-MILLION</b></a>
+    <a href="#home" class="logo bar-item">
+        <!--<b>COME-MILLION!</b>-->
+        <img class="logo-image" src="layout/Assets/logo.svg" width="162px">
+    </a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="menu">
       <a href="#about" class="bar-item">About</a>
@@ -25,8 +28,31 @@
 <header class="display-container" style="max-width:1500px;" id="home">
   <img class="image" src="layout/bg_images/bg_1.jpg"  width="1500" height="800">
   <div class="display-middle">
-    <h1 class=""> [Count Down]</h1>
+      <div id="clockdiv">
+          <div>
+              <span class="days"></span>
+              <div class="smalltext">DAYS</div>
+          </div>
+          <div>
+              <span class="hours"></span>
+              <div class="smalltext">HOURS</div>
+          </div>
+          <div>
+              <span class="minutes"></span>
+              <div class="smalltext">MINUTES</div>
+          </div>
+          <div>
+              <span class="seconds"></span>
+              <div class="smalltext">SECONDS</div>
+          </div>
+          <br>
+      </div>
   </div>
+    <div class="down-arrow button">
+        <a href="#about"><img src="layout/Assets/down-arrow.svg" width="49px"></a>
+
+    </div>
+
 </header>
 
 <!-- Page content -->
@@ -34,7 +60,10 @@
 
   <!-- About Section -->
   <div class="container" id="about">
-        <h3 class="">About</h3>
+        <!--<h3 class="">Come-Million!</h3>-->
+        <div class="title-image">
+            <img src="layout/Assets/about-title.svg">
+        </div>
         <p>Come-Million is a giant colorful chameleon that shines beautifully in million colors.
           Her skin is made of a scales that carry thousands of little lights.
           As a social animal, the colors change in reaction to the explorers inside it, sensed through its pumping heart.
@@ -43,7 +72,10 @@
 
   <!-- Mission Section -->
   <div class="container" id="mission">
-    <h3 class="">Mission</h3>
+    <!--<h3 class="">Our Mission</h3>-->
+      <div class="title-image">
+          <img src="layout/Assets/mission.svg">
+      </div>
     <p>We are about to create something exciting that is greater than the sum of our
       parts - fusing our skills together to make something that we could not otherwise achieve.
       With this spirit of connection we will start a journey and bring to life our mindfruit - “Come-Million!”
@@ -53,20 +85,36 @@
 
   <!-- Contact Section -->
   <div class="container" id="team">
-      <h3 class="team">Team</h3>
+      <!--<h3 class="team">Our Team</h3>-->
+      <div class="title-image">
+          <img src="layout/Assets/team.svg">
+      </div>
       <div>
 
       </div>
+      <p>
+
+          We are a collective of artists, designers, engineers, makers, and dreamers.
+          We have a long track record of success,
+          producing artistic creations and installations for museums, commercials, festivals and just for fun.
+      </p>
 
   </div>
 
   <!-- Contact Section -->
   <div class="container" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project.</p>
-      <div>
-
+    <!--<h3 class="">Contact Us</h3>-->
+      <div class="title-image">
+          <img src="layout/Assets/contact.svg">
       </div>
+    <p>
+        info@come-million.com
+        <br/>
+        314-159-2653
+        <br/>
+        NY, USA
+    </p>
+
   </div>
 
 <!-- End page content -->
@@ -77,7 +125,9 @@
 
 <!-- Footer -->
 <footer class="">
-  <div>COME-MILLION</div>
+  <div>
+      <img class="footer-image" src="layout/assets/footer.svg">
+  </div>
 </footer>
 
 <!-- Add Google Maps -->
@@ -103,6 +153,8 @@
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
+
+<script src="main.js" type="text/javascript"></script>
 
 </body>
 </html>

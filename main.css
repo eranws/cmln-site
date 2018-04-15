@@ -59,7 +59,17 @@ body {
 }
 
 .bar .menu {
-    float: right
+    float: right;
+
+    top: 50%;
+    position: absolute;
+    right: 0;
+    padding-right: inherit;
+}
+
+.logo-image {
+    width:162px;
+    max-width: 16vw;
 }
 @media (max-width:600px) {
     .bar .menu {
@@ -92,7 +102,21 @@ img {
     left: 50%;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
+    text-align:center;
+    width:100%;
 }
+
+.down-arrow {
+
+    text-align: center;
+}
+.down-arrow img {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 
 .container {
     padding: 150px 20px; //todo:change to responsive units!
@@ -109,6 +133,16 @@ img {
     padding-bottom: 135px;
     max-width:860px;
     margin: 0 auto;
+}
+
+.title-image > img {
+   height:14px;
+    width: auto;
+    max-width: 100%;
+}
+
+#about >.title-image > img {
+    height:20px;
 }
 
 #about {
@@ -129,4 +163,56 @@ footer {
     text-align: center;
     width:100%;
     padding:20px;
+}
+
+.footer-image {
+    width:60%;
+    max-width: 130px;
+}
+
+
+#clockdiv{
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 44px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    background: rgba(0,0,0,0.65);
+    display: inline-block;
+    font-weight: 400;
+    width: 90px;
+    max-width:15vw;
+    height:110px;
+    padding: 20px 15px;
+}
+
+#clockdiv div > span{
+    display: inline-block;
+}
+
+.smalltext{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+@media (max-width:810px) {
+    #clockdiv{
+        font-size:6vw;
+    }
+
+    .smalltext{
+        font-size: 1.7vw;
+    }
+
+    #clockdiv > div{
+        height:16vw;
+    }
+
+    .down-arrow img {
+        width:35px;
+        display:none;
+    }
 }
