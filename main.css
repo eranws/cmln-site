@@ -119,7 +119,7 @@ img {
 
 
 .container {
-    padding: 150px 20px; //todo:change to responsive units!
+    padding: 160px 10vw; //todo:change to responsive units!
     background-repeat: no-repeat;
     background-size: cover;
     text-align:center;
@@ -127,6 +127,13 @@ img {
     color:#ccc;
 
 }
+
+@media (max-width:810px) {
+    .container {
+        padding: 13vh 10vw;
+    }
+}
+
 
 .container > p {
     padding-top: 63px; //todo: change to responsive units
@@ -197,6 +204,39 @@ footer {
     font-size: 12px;
     font-weight: 300;
 }
+
+.social img {
+    width:29px;
+}
+
+.imgs{
+   padding: 0;
+    padding-bottom: 25vw;
+
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 25%;
+    padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
+    margin:0;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+}
+.img_1-1{background-image:url('layout/Assets/imgs/1.jpg');}
+.img_1-2{background-image:url('layout/Assets/imgs/2.jpg');}
+.img_1-3{background-image:url('layout/Assets/imgs/3.jpg');}
+.img_1-4{background-image:url('layout/Assets/imgs/4.jpg');}
+.img_2-1{background-image:url('layout/Assets/imgs/5.jpg');}
+.img_2-2{background-image:url('layout/Assets/imgs/6.jpg');}
+.img_2-3{background-image:url('layout/Assets/imgs/7.jpg');}
+.img_2-4{background-image:url('layout/Assets/imgs/8.jpg');}
+.img_3-1{background-image:url('layout/Assets/imgs/9.jpg');}
+.img_3-2{background-image:url('layout/Assets/imgs/1.jpg');}
+.img_3-3{background-image:url('layout/Assets/imgs/2.jpg');}
+.img_3-4{background-image:url('layout/Assets/imgs/3.jpg');}
 
 @media (max-width:810px) {
     #clockdiv{
